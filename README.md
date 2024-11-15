@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Task Manager Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Task Manager is a web-based application designed to help users organize and manage their tasks in an efficient and user-friendly manner. It offers features to add, update, delete tasks, manage task priorities, set deadlines, and search/filter tasks based on specific criteria. The app is built using modern web technologies and is fully responsive, ensuring a seamless experience across various devices.
+
+
 
 ## Available Scripts
 
