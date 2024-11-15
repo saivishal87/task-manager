@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Task Manager Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Task Manager is a web-based application designed to help users organize and manage their tasks in an efficient and user-friendly manner. It offers features to add, update, delete tasks, manage task priorities, set deadlines, and search/filter tasks based on specific criteria. The app is built using modern web technologies and is fully responsive, ensuring a seamless experience across various devices.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Task Management**: Add, update, and delete tasks with ease.
+- **Priority Setting**: Assign priority levels (High, Medium, Low) to tasks for better organization.
+- **Due Dates**: Set due dates and times for each task, with clear visual indicators.
+- **Search Functionality**: Search tasks by name or description to quickly find relevant tasks.
+- **Filter Tasks**: Filter tasks based on priority, due date, or task status.
+- **Responsive Design**: View and interact with tasks seamlessly on desktop, tablet, and mobile devices.
+- **Task Actions**: Take actions like updating, submitting, or deleting tasks with interactive buttons.
+- **Animations**: Smooth hover and click animations to enhance the user experience.
+- **Task State**: Display a message and engaging UI when there are no tasks available.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img width="800" alt="Screenshot 2024-11-15 at 2 51 40 PM" src="https://github.com/user-attachments/assets/77a46247-2e2e-43d1-b35e-36e1b077f617">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo Video
 
-### `npm test`
+https://github.com/user-attachments/assets/7fd45307-e7a7-4d84-94c4-0c27be764fcf
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **Frontend**: HTML, CSS (TailwindCSS), JavaScript
+- **Libraries**: 
+  - **Grid Layout** for task card display
+  - **JavaScript Animations** for interactive button and task card actions
+- **Responsive Design**: Tailored for various screen sizes (mobile, tablet, desktop)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run this project locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/yourusername/task-manager.git
 
-### `npm run eject`
+2. Navigate to the project directory:
+    ```bash
+    cd task-manager
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3.Open index.html in your browser or serve the project using a local server (e.g., Live Server in Visual Studio Code).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4.Enjoy using the task manager app!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## How to Use
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Add a Task**: 
+   - To add a new task, click the "Add a Task" button located at the top or bottom of the task list. 
+   - A form will pop up where you can enter the task name, description, priority, and due date. Once filled out, click the "Submit" button to save your task.
 
-## Learn More
+2. **Update a Task**: 
+   - To update an existing task, simply click on the task card you want to edit. 
+   - You will be able to modify the task name, description, priority level, and due date. After making the necessary changes, click "Save" to update the task.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Delete a Task**: 
+   - To remove a task from the list, click the "Delete" button located on the task card. 
+   - A confirmation prompt will appear, and if you confirm, the task will be permanently deleted from your list.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Set Task Priorities**:
+   - Assign a priority (High, Medium, or Low) to each task. 
+   - The task's priority is represented by a colored dot next to the task name. Tasks with high priority are displayed with a red dot, medium priority with an orange dot, and low priority with a green dot.
 
-### Code Splitting
+5. **Set Task Due Date**:
+   - For each task, you can set a due date and time to track deadlines. 
+   - The due date is displayed below the task name. If the task is overdue, it will appear with a red indicator.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+6. **Search Tasks**: 
+   - Use the search bar located at the top of the task list to quickly find tasks by name or description. 
+   - Simply type in a keyword, and the task list will automatically filter to show only the tasks that match the search query.
 
-### Analyzing the Bundle Size
+7. **Filter Tasks**: 
+   - Use the filter options to sort tasks based on their priority, due date, or task status (e.g., Pending, Completed).
+   - The filter options are available as dropdowns or buttons, allowing you to quickly toggle between tasks with different priorities or deadlines.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+8. **No Tasks State**:
+    - When no tasks are present, the app will display a friendly message like "No tasks available" and an engaging UI to encourage adding tasks. 
+    - This makes the user experience smoother and provides a clear indication when the task list is empty.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Thank you
