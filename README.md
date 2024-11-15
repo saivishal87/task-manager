@@ -18,6 +18,10 @@ The Task Manager is a web-based application designed to help users organize and 
 
 <img width="800" alt="Screenshot 2024-11-15 at 2 51 40 PM" src="https://github.com/user-attachments/assets/77a46247-2e2e-43d1-b35e-36e1b077f617">
 
+## Demo Video
+
+https://github.com/user-attachments/assets/7fd45307-e7a7-4d84-94c4-0c27be764fcf
+
 ## Technologies Used
 
 - **Frontend**: HTML, CSS (TailwindCSS), JavaScript
