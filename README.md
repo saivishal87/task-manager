@@ -16,6 +16,8 @@ The Task Manager is a web-based application designed to help users organize and 
 - **Animations**: Smooth hover and click animations to enhance the user experience.
 - **Task State**: Display a message and engaging UI when there are no tasks available.
 
+<img width="800" alt="Screenshot 2024-11-15 at 2 51 40 PM" src="https://github.com/user-attachments/assets/77a46247-2e2e-43d1-b35e-36e1b077f617">
+
 ## Technologies Used
 
 - **Frontend**: HTML, CSS (TailwindCSS), JavaScript
@@ -74,3 +76,5 @@ To run this project locally, follow these steps:
     - When no tasks are present, the app will display a friendly message like "No tasks available" and an engaging UI to encourage adding tasks. 
     - This makes the user experience smoother and provides a clear indication when the task list is empty.
 
+
+##Thank you
