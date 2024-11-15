@@ -1,0 +1,144 @@
+/* Container styling */
+.create-task {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.create-task h2 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+/* Form styling */
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Label and input styling */
+.task-form label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Input fields */
+.task-form input[type="text"],
+.task-form input[type="date"],
+.task-form select,
+.task-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.task-form input:focus,
+.task-form select:focus,
+.task-form textarea:focus {
+    outline: none;
+    border-color: #333;
+}
+
+/* Button styling */
+.create-button {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .create-task {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .task-form label {
+        font-size: 0.9rem;
+    }
+
+    .create-button {
+        font-size: 1rem;
+    }
+}
+
+
+.task-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.update-button, .delete-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Update button style */
+.update-button {
+    background-color: #2196F3; /* Bright blue */
+    color: white;
+    box-shadow: 0 4px 6px rgba(33, 150, 243, 0.3); /* Soft blue shadow */
+}
+
+.update-button:hover {
+    background-color: #1976D2; /* Darker blue */
+    box-shadow: 0 6px 12px rgba(25, 118, 210, 0.4); /* Stronger hover shadow */
+}
+
+/* Delete button style */
+.delete-button {
+    background-color: #FF5722; /* Vibrant orange-red */
+    color: white;
+    box-shadow: 0 4px 6px rgba(255, 87, 34, 0.3); /* Soft orange shadow */
+}
+
+.delete-button:hover {
+    background-color: #E64A19; /* Darker orange-red */
+    box-shadow: 0 6px 12px rgba(230, 74, 25, 0.4); /* Stronger hover shadow */
+}
+.submit-button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #388E3C; /* Darker green for hover effect */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.submit-button:active {
+    background-color: #2C6B2F; /* Even darker green for click */
+    transform: translateY(0); /* Button goes back to normal position */
+}

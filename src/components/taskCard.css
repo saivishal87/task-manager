@@ -1,0 +1,132 @@
+/* Task Card */
+.task-card {
+    background-color: rgba(178, 186, 219, 0.882);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    width: 100%; /* Ensures the card fills its container */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 20px;
+    border-left: 5px solid #4CAF50;
+}
+
+.task-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.05);
+}
+
+/* Button Animations */
+.update-button,
+.submit-button,
+.delete-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Hover Effects */
+.update-button:hover,
+.submit-button:hover,
+.delete-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Active Button Animation */
+.update-button:active,
+.submit-button:active,
+.delete-button:active {
+    transform: translateY(0);
+    animation: click-animation 0.3s ease-in-out;
+}
+
+/* Click Animation */
+@keyframes click-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Button Specific Styles */
+.update-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.update-button:hover {
+    background-color: #388E3C;
+}
+
+.submit-button {
+    background-color: #FF9800;
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #FB8C00;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .task-card-container {
+        grid-template-columns: repeat(2, 1fr); /* Show two cards per row on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .task-card-container {
+        grid-template-columns: 1fr; /* Show one card per row on small screens */
+    }
+
+    .task-card {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .task-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .task-card .description {
+        font-size: 0.9rem;
+    }
+
+    .due-date-time {
+        font-size: 0.9rem;
+    }
+
+    .task-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

@@ -1,0 +1,22 @@
+.task-tab {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.task-tab button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.task-tab .active {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+}
