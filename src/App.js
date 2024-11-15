@@ -175,7 +175,8 @@ function HomePage({ tasks, selectedTab, deleteTask, markAsCompleted, searchQuery
           ))
         ) : (
           <div className="no-tasks-message">
-            <h1>No Tasks</h1>
+            <h1>No tasks yet! Start by adding some
+            </h1>
           </div>
         )}
       </div>
