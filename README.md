@@ -39,3 +39,38 @@ To run this project locally, follow these steps:
 3.Open index.html in your browser or serve the project using a local server (e.g., Live Server in Visual Studio Code).
 
 4.Enjoy using the task manager app!
+
+## How to Use
+
+1. **Add a Task**: 
+   - To add a new task, click the "Add a Task" button located at the top or bottom of the task list. 
+   - A form will pop up where you can enter the task name, description, priority, and due date. Once filled out, click the "Submit" button to save your task.
+
+2. **Update a Task**: 
+   - To update an existing task, simply click on the task card you want to edit. 
+   - You will be able to modify the task name, description, priority level, and due date. After making the necessary changes, click "Save" to update the task.
+
+3. **Delete a Task**: 
+   - To remove a task from the list, click the "Delete" button located on the task card. 
+   - A confirmation prompt will appear, and if you confirm, the task will be permanently deleted from your list.
+
+4. **Set Task Priorities**:
+   - Assign a priority (High, Medium, or Low) to each task. 
+   - The task's priority is represented by a colored dot next to the task name. Tasks with high priority are displayed with a red dot, medium priority with an orange dot, and low priority with a green dot.
+
+5. **Set Task Due Date**:
+   - For each task, you can set a due date and time to track deadlines. 
+   - The due date is displayed below the task name. If the task is overdue, it will appear with a red indicator.
+
+6. **Search Tasks**: 
+   - Use the search bar located at the top of the task list to quickly find tasks by name or description. 
+   - Simply type in a keyword, and the task list will automatically filter to show only the tasks that match the search query.
+
+7. **Filter Tasks**: 
+   - Use the filter options to sort tasks based on their priority, due date, or task status (e.g., Pending, Completed).
+   - The filter options are available as dropdowns or buttons, allowing you to quickly toggle between tasks with different priorities or deadlines.
+
+8. **No Tasks State**:
+    - When no tasks are present, the app will display a friendly message like "No tasks available" and an engaging UI to encourage adding tasks. 
+    - This makes the user experience smoother and provides a clear indication when the task list is empty.
+
