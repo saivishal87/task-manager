@@ -43,15 +43,20 @@ Here we might want to set a default priority (e.g., `'Medium'`) only if the task
 
 ## 3. How would you track down a performance issue in production? Have you ever had to do this?
 
-To track down a performance issue in production, I would follow these steps:
+While it has not been possible for me to yet track down a performance issue in a production environment, I hold a lucid notion of the standard approaches on how diagnosis and resolution of such issues are undertaken.
 
-1. **Check Logs**: Look through the logs of an application and the servers themselves for errors or warnings that are suggestive of performance issues.
-2. **Use Profiling Tools**:  Utilize Chrome DevTools, New Relic, or even Datadog, which can help identify slow parts in the application. Examples are slow API calls or high memory usage.
-3. **Analyze Database Queries**: Analyze your database queries. Any of these is running too long? Optimize them.
-4. **Monitor Server Resources**:Monitor CPU and memory usage through `htop` or any other cloud monitoring tools for network usage
-5. **Load Testing**: High traffic test with tools like JMeter or Artillery to understand where the performance bottlenecks lie.
 
-Yes, I had to do it before. For example, once I observed that slow database queries were being a cause for lag in loading user data. After optimizing them, it picked up enormously.
+If, however, I would have to deal with a performance problem, these are the steps I would take:
+
+- **Optimizing Code and Resources**: When no trouble is found, I can direct the optimization of the right code or resource. This may involve code rewrites in non-optimal forms, better-performing database queries, or enabling caching just to save load time.
+
+- **Testing Changes**: In conjunction with changes into the product, I would proceed to perform a through test of the application to test, alongside performance improvement, whether any new problems have been introduced.
+
+- **Monitoring and Logging**: 
+My first step would have been to ensure that substantial monitoring and logging systems are properly employed. 
+The use of APM applications to collect response time, error rates, and resource usage data would be performed. This should provide an insight into any unusual behavior identified through logging.
+
+- **Constant Monitoring**: Finally, I would like to establish continuous monitoring to make sure stationary improvement on performance, as well as to address energement in any other result the future may afford
 
 ## 4. If you had more time, what additional features or improvements would you consider adding to the task management application?
 
